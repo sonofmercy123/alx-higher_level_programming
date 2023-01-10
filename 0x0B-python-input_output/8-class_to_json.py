@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 '''
-to_json_string function
+class_to_json function
 '''
-import json
 
 
-def to_json_string(my_obj):
+def class_to_json(obj):
     '''
-    Returns the JSON representation of an object
+    Returns the dictionary description with simple data structure for
+    JSON serialization of an object
     '''
-    return (json.dumps(my_obj))
+    return obj.__dict__
